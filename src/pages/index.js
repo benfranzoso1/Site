@@ -1,6 +1,9 @@
 import React from "react"
+import Layout from "../components/layout"
+import Hero from "../components/hero"
 
-export default () => <div>
-
-    <h1>Always interactive, lightning fast design.</h1>
-</div>
+export default () => (
+    <Layout>
+        <Hero></Hero>
+    </Layout>
+)

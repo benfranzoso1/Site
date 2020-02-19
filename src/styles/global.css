@@ -1,13 +1,162 @@
 @import "typography.css";
+@import "colors.css";
+@import "button.css";
 
 
 body {
-    background: red;
     font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;;
     font-size: 18px;
 }
 
-h1 {
-    font-weight: 600;
-    font-size: 72px;
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+.industry1 {
+    margin-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgba(0, 213, 75, 0.06);
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 3%;
+    margin: 0 auto;
+    /* border: 4px solid darkgreen; */
+}
+
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 70px;
+}
+
+.half-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .half-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.third-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 70px;
+    /* border: 2px solid saddlebrown; */
+}
+
+@media (max-width: 900px) {
+    .third-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fourth-grid {
+    /* text-align: center; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 70px;
+
+    /* border: 2px solid saddlebrown; */
+}
+
+@media (max-width: 900px) {
+    .fourth-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-video {
+    margin-top: 70px;
+}
+
+.sales-copy {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* border: 3px solid gold; */
+}
+
+
+
+.step {
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--brand-color);
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    font-weight: 500;}
+
+
+      
+.background-section {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+}
+
+.black-overlay {
+    display: -webkit-flex;  /* Safari */
+    display: flex;
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+    align-items: center;
+    
+    color: white;
+
+}
+
+.feature span {
+    margin-right: 25px;
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.faq h2 {
+    margin-bottom: 50px;
 }
