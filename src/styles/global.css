@@ -1,0 +1,13 @@
+@import "typography.css";
+
+
+body {
+    background: red;
+    font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 72px;
+}
