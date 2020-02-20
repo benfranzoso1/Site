@@ -7,12 +7,21 @@
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+    resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /assets/
         }
       },
-    }
+    },
   ],
 }
