@@ -26,6 +26,16 @@ section {
     margin-bottom: 70px;
 }
 
+.flexheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+}
+
 .industry1 {
     margin-bottom: 70px;
     padding-top: 70px;
@@ -145,25 +155,7 @@ section {
 
 
       
-.background-section {
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 70px;
-}
 
-.black-overlay {
-    display: -webkit-flex;  /* Safari */
-    display: flex;
-    background-color: rgba(0,0,0,.3);
-    height: 100%;
-    align-items: center;
-    
-    color: white;
-
-}
 
 .feature span {
     margin-right: 25px;
