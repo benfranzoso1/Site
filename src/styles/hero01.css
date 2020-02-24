@@ -37,3 +37,10 @@
     margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+    .logos {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
