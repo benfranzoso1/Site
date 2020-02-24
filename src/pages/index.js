@@ -10,6 +10,8 @@ import Miller from "gatsby-image"
 import Jerrdan from "gatsby-image"
 import Peterbilt from "gatsby-image"
 import Freightliner from "gatsby-image"
+import Cat from "gatsby-image"
+import Landoll from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 const IndexPage = (props) => (
@@ -23,15 +25,17 @@ const IndexPage = (props) => (
               <div className="container">
                   <div className="hero-cta">
                     <span>Equipment-Loans.com</span>
-                    <h1>We Work<br/>For You On Demand.</h1>
-                     <p className="large"><span className="bold">Headache free</span> financing so you can get back to what<br/> really matters, making money.</p>
+                    <h1>We Work For You On Demand.</h1>
+                     <p className="large"><span className="bold">Headache free</span> financing so you can get back to what really matters, making money.</p>
                   </div>
                   <div className="heros-dealer">
+                      <div className="logos">
                       <Miller
                         className="miller-logo"
                         fixed={props.data.miller.childImageSharp.fixed}
+                        fadeIn>
 
-                      ></Miller>
+                      </Miller>
                         <Jerrdan
                         className="jerrdan-logo"
                         fixed={props.data.jerrdan.childImageSharp.fixed}
@@ -43,10 +47,21 @@ const IndexPage = (props) => (
 
                       ></Peterbilt>
                         <Freightliner
-                        className="jerrdan-logo"
+                        className="freightliner-logo"
                         fixed={props.data.freightliner.childImageSharp.fixed}
 
                       ></Freightliner>
+                        <Cat
+                        className="cat-logo"
+                        fixed={props.data.cat.childImageSharp.fixed}
+
+                      ></Cat>
+                        <Landoll
+                        className="landoll-logo"
+                        fixed={props.data.landoll.childImageSharp.fixed}
+
+                      ></Landoll>
+                      </div>
                   </div>
               </div>
           </div>
@@ -72,28 +87,42 @@ query {
   }
   miller: file(relativePath: {eq: "miller.png"}) {
     childImageSharp {
-      fixed(pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 89, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   jerrdan: file(relativePath: {eq: "jerrdan.png"}) {
     childImageSharp {
-      fixed(pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 90, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   peterbilt: file(relativePath: {eq: "peterbilt.png"}) {
     childImageSharp {
-      fixed(pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 81, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }
   }
   freightliner: file(relativePath: {eq: "freightliner.png"}) {
     childImageSharp {
-      fixed(pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 92, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+  cat: file(relativePath: {eq: "CAT.png"}) {
+    childImageSharp {
+      fixed(width: 65, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+        ...GatsbyImageSharpFixed
+      }
+    }
+  }
+  landoll: file(relativePath: {eq: "landoll.png"}) {
+    childImageSharp {
+      fixed(width: 80, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }

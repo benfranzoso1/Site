@@ -2,18 +2,21 @@
     font-family: "Colfax";
     src: url("../fonts/colfaxwebbold.woff2");
     font-weight: 600;
+    font-display: swap;
   }
 
   @font-face {
     font-family: "Colfax";
     src: url("../fonts/colfaxwebmedium.woff2");
     font-weight: 500;
+    font-display: swap;
   }
   
   @font-face {
     font-family: "Colfax";
     src: url("../fonts/colfaxwebregular.woff2");
     font-weight: 400;
+    font-display: swap;
   }
 
   * {
@@ -41,7 +44,7 @@
       font-size: 72px;
       font-weight: 600;
       letter-spacing: -4px;
-    line-height: 1;
+      line-height: 1;
       margin-bottom: 30px;
   }
   
@@ -59,7 +62,10 @@
   
   @media (max-width: 425px) {
     h1 {
-      font-size: 1.64rem;
+      margin-top: 12px;
+      margin-bottom: 10px;
+      font-size: 32px;
+      letter-spacing: 0;
     }
   }
     
@@ -114,6 +120,14 @@
       font-size: 1.5rem;
       line-height: 1.5;
       margin-bottom: 30px;
+  }
+
+  @media (max-width: 425px) {
+    .large {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
   }
   
   
