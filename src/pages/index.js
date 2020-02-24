@@ -12,7 +12,7 @@ import Jerrdan from "gatsby-image"
 import Peterbilt from "gatsby-image"
 import Freightliner from "gatsby-image"
 import Cat from "gatsby-image"
-import Landoll from "gatsby-image"
+import Mack from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 const IndexPage = (props) => (
@@ -58,11 +58,11 @@ const IndexPage = (props) => (
                         fixed={props.data.cat.childImageSharp.fixed}
 
                       ></Cat>
-                        <Landoll
-                        className="landoll-logo"
-                        fixed={props.data.landoll.childImageSharp.fixed}
+                        <Mack
+                        className="mack-logo"
+                        fixed={props.data.mack.childImageSharp.fixed}
 
-                      ></Landoll>
+                      ></Mack>
                       </div>
                   </div>
               </div>
@@ -122,9 +122,9 @@ query {
       }
     }
   }
-  landoll: file(relativePath: {eq: "landoll.png"}) {
+  mack: file(relativePath: {eq: "mack.png"}) {
     childImageSharp {
-      fixed(width: 80, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 100, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }
