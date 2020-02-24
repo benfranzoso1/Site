@@ -4,6 +4,7 @@ import Hero from "../components/hero"
 import Dealers from "../components/dealers"
 import Steps from "../components/steps"
 import Why from "../components/why"
+import Play from "../assets/play.svg"
 
 import BackgroundImage from "gatsby-background-image"
 import Miller from "gatsby-image"
@@ -27,6 +28,7 @@ const IndexPage = (props) => (
                     <span>Equipment-Loans.com</span>
                     <h1>We Work For You On Demand.</h1>
                      <p className="large"><span className="bold">Headache free</span> financing so you can get back to what really matters, making money.</p>
+                     <button className="playbutton"><Play className="play"></Play></button>
                   </div>
                   <div className="heros-dealer">
                       <div className="logos">
