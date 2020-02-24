@@ -27,10 +27,13 @@
 
 .logos {
     margin-top: 25px;
-    margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.miller-logo, .jerrdan-logo, .peterbilt-logo, .freightliner-logo, .cat-logo, .landoll-logo {
+    margin: 0 auto;
 }
 
