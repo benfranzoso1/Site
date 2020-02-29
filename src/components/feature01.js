@@ -12,8 +12,8 @@ export default () => (
         <div className="sales-copy">
             <h2>We finance any type of equipment your business needs</h2>
             <p className="large">Headache free  financing so you can get back to what really matters, making money.</p>
-            <div className="flexcenter">
-            <a href="https://ben1238.typeform.com/to/PRIyZc" className="btn-large" target="_blank" rel="noopener noreferrer">Get Started <Arrow className="arrow"/></a>
+            <div className="feature01 flexcenter">
+                <a href="https://ben1238.typeform.com/to/PRIyZc" className="btn-large" target="_blank" rel="noopener noreferrer">Get Started <Arrow className="arrow"/></a>
             </div>
         </div>
         <div className="bullets">
