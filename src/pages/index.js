@@ -70,8 +70,6 @@ const IndexPage = (props) => (
           </BackgroundImage>
         </section>
         <Feature01></Feature01>
-        <Hero></Hero>
-        <Steps></Steps>
         <Why></Why>
     </Layout>
 )
