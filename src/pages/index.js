@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
+import Feature01 from "../components/feature01"
 import Hero from "../components/hero"
-import Dealers from "../components/dealers"
 import Steps from "../components/steps"
 import Why from "../components/why"
 import Play from "../assets/play.svg"
@@ -69,8 +69,8 @@ const IndexPage = (props) => (
           </div>
           </BackgroundImage>
         </section>
+        <Feature01></Feature01>
         <Hero></Hero>
-        <Dealers></Dealers>
         <Steps></Steps>
         <Why></Why>
     </Layout>
