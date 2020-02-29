@@ -25,7 +25,7 @@ const IndexPage = (props) => (
           <div className="black-overlay">
               <div className="container">
                   <div className="hero-cta">
-                    <span>Equipment-Loans.com</span>
+                    <span className="xtrasmall">Equipment-Loans.com</span>
                     <h1>We Work For You On Demand.</h1>
                      <p className="large"><span className="bold">Headache free</span> financing so you can get back to what really matters, making money.</p>
                      <button className="playbutton"><Play className="play"></Play></button>
@@ -89,7 +89,7 @@ query {
   }
   miller: file(relativePath: {eq: "miller.png"}) {
     childImageSharp {
-      fixed(width: 89, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 100, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }
@@ -103,7 +103,7 @@ query {
   }
   peterbilt: file(relativePath: {eq: "peterbilt.png"}) {
     childImageSharp {
-      fixed(width: 81, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
+      fixed(width: 85, pngQuality: 10, pngCompressionSpeed: 10, webpQuality: 10) {
         ...GatsbyImageSharpFixed
       }
     }

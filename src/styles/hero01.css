@@ -27,6 +27,7 @@
 
 .logos {
     margin-top: 25px;
+    gap: 10px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -37,7 +38,14 @@
     margin: 0 auto;
 }
 
+
 @media (min-width: 768px) {
+    .hero01 {
+        height: 520px;
+    }
+    .hero-cta {
+        margin-bottom: 60px;
+    }
     .logos {
         display: flex;
         justify-content: space-between;
