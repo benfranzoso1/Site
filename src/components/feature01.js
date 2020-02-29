@@ -1,7 +1,9 @@
 import React from "react"
 import Arrow from "../assets/arrow-thin-right.svg"
 import Credit from "../assets/credit.svg"
+import Speed from "../assets/fast.svg"
 import Rates from "../assets/rates.svg"
+import Check from "../assets/checkmark-outline.svg"
 
 
 export default () => (
@@ -15,18 +17,27 @@ export default () => (
             </div>
         </div>
         <div className="bullets">
-            <div className="one">
-                <span className="feature01icon"><Credit className="crediticon"></Credit></span>
-                <h3>No Impact To Credit Score</h3>
-            </div>
-            <div className="two">
-                <span className="feature01icon"><span className="speed">💳</span></span>
-                <h3>Unbelivably Fast Funding</h3>
-            </div>
-            <div className="three">
-                <span className="feature01icon"><Rates className="rates"></Rates></span>
-                <h3>Competitve Commerical Rates</h3>
-            </div>
+            <div className="feature11">
+                    <span className="feature01icon"><Credit className="credit"></Credit></span>
+                   <div>
+                       <h3>No Impact To Credit Score</h3>
+                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                    </div>
+               </div>
+            <div className="feature11">
+                    <span className="feature01icon"><Speed className="speed"></Speed></span>
+                   <div>
+                       <h3>Unbelivably Fat Funding</h3>
+                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                    </div>
+               </div>
+               <div className="feature11">
+                    <span className="feature01icon"><Rates className="rates"></Rates></span>
+                   <div>
+                       <h3>Competitive Commerical Rates</h3>
+                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                    </div>
+               </div>
         </div>
     </div>
 </section> 

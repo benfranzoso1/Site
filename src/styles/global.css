@@ -7,7 +7,7 @@
 body {
     font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;;
     font-size: 18px;
-    /* background-color: rgb(255, 255, 255); */
+    background: #fff;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -80,18 +80,12 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 40px;
 }
 
-.one, .two, .three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
 
-}
-
-.one h3, .two h3, .three, h3 {
-    margin-bottom: 0;
+.feature11 h3 {
+    margin-bottom: 10px;
 }
 
 .feature01icon {
@@ -104,7 +98,7 @@ section {
     background: var(--light-grey);;
 }
 
-.crediticon, .rates {
+.credit, .rates, .speed {
     height: 35px;
 }
 
@@ -209,6 +203,20 @@ section {
     justify-content: flex-start;
 }
 
+.feature11 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+} 
+
+.feature11:last-child {
+    margin-bottom: 0;
+}
+
+.feature11 span {
+    margin-right: 25px;
+}
 .faq h2 {
     margin-bottom: 50px;
 }
