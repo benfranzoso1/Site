@@ -84,4 +84,31 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .hero01 {
+        height: 840px;
+    }
+    .hero-cta {
+        padding-top: 100px;
+        margin-bottom: 100px;
+    }
+    .hero-cta h1 {
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-cta h1 span::before {
+        content: "\A";
+        white-space: pre;
+    }
+    p.large span::before {
+        content: "\A";
+        display: block;
+    }
+    .logos {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+}
+
 

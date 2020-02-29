@@ -26,8 +26,8 @@ const IndexPage = (props) => (
               <div className="container">
                   <div className="hero-cta">
                     <span className="xtrasmall">Equipment-Loans.com</span>
-                    <h1>We Work For You On Demand.</h1>
-                     <p className="large"><span className="bold">Headache free</span> financing so you can get back to what really matters, making money.</p>
+                    <h1>We Work <span>For You On Demand.</span></h1>
+                     <p className="large"><b className="bold">Headache free</b> financing so you can get back to what <span>really matters, making money.</span></p>
                      <button className="playbutton"><Play className="play"></Play></button>
                   </div>
                   <div className="heros-dealer">
