@@ -26,6 +26,12 @@ section {
     margin-bottom: 70px;
 }
 
+@media (max-width: 1024px) {
+    section {
+        margin-bottom: 50px;
+    }
+  }
+
 .flexheader {
     display: flex;
     align-items: center;
@@ -78,8 +84,19 @@ section {
         align-items: center;
         justify-content: center;
     }
+    .feature01icon {
+        margin-bottom: 14px;
+        border-radius: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        background: var(--light-grey);;
+    }
     .feature11 {
-        padding-top: 50px;
+        margin-top: 40px;
+        display: block;
     }
     .feature01 .flexcenter {
         display: flex;
@@ -90,6 +107,28 @@ section {
 @media (min-width: 1114px) {
     .feature01 .flexcenter {
         display: block;
+    }
+    .feature11 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    } 
+    
+    .feature11:last-child {
+        margin-bottom: 0;
+    }
+    .feature11 span {
+        margin-right: 25px; 
+    }
+    .feature01icon {
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 48px;
+        background: var(--light-grey);;
     }
     .bullets {
         border-left: 1px solid var(--light-grey);
@@ -108,15 +147,6 @@ section {
     margin-bottom: 10px;
 }
 
-.feature01icon {
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-    width: 48px;
-    background: var(--light-grey);;
-}
 
 .credit, .rates, .speed {
     height: 35px;
@@ -223,7 +253,7 @@ section {
     justify-content: flex-start;
 }
 
-.feature11 {
+/* .feature11 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -232,11 +262,10 @@ section {
 
 .feature11:last-child {
     margin-bottom: 0;
-}
+} */
 
-.feature11 span {
-    margin-right: 25px;
-}
+
+
 .faq h2 {
     margin-bottom: 50px;
 }
