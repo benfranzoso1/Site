@@ -4,6 +4,7 @@ import Feature01 from "../components/feature01"
 import Hero from "../components/hero"
 import Steps from "../components/steps"
 import Why from "../components/why"
+import Faq from "../components/faq"
 import Play from "../assets/play.svg"
 
 import BackgroundImage from "gatsby-background-image"
@@ -71,6 +72,7 @@ const IndexPage = (props) => (
         </section>
         <Feature01></Feature01>
         <Why></Why>
+        <Faq></Faq>
     </Layout>
 )
 
