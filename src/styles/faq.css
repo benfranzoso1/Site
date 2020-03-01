@@ -1,0 +1,20 @@
+.tabs {
+    border: 2px solid pink;
+}
+
+.tablist {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    border: 2px solid sandybrown;
+}
+
+.tab {
+    width: 33.33%;
+    color: #fff;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-color);
+}
