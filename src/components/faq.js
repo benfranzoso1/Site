@@ -2,6 +2,17 @@ import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
+
+// Demo styles, see 'Styles' section below for some notes on use.
+import 'react-accessible-accordion/dist/fancy-example.css';
+
 
 export default () => (
 <section className="faq">
@@ -10,26 +21,40 @@ export default () => (
     <TabList className="tablist">
       <Tab className="tab">Getting Pre-Qualifed</Tab>
       <Tab className="tab">How Does It Work?</Tab>
-      <Tab className="tab">What's The Next Step</Tab>
     </TabList>
 
     <TabPanel className="tabpanel">
-      <p>
-        <b>Mario</b> (<i>Japanese: マリオ Hepburn: Mario, [ma.ɾʲi.o]</i>) (<i>English:
-        /ˈmɑːrioʊ/; Italian: [ˈmaːrjo]</i>) is a fictional character in the Mario video
-        game franchise, owned by Nintendo and created by Japanese video game designer
-        Shigeru Miyamoto. Serving as the company's mascot and the eponymous protagonist
-        of the series, Mario has appeared in over 200 video games since his creation.
-        Depicted as a short, pudgy, Italian plumber who resides in the Mushroom
-        Kingdom, his adventures generally center upon rescuing Princess Peach from the
-        Koopa villain Bowser. His younger brother and sidekick is Luigi.
-      </p>
-      <p>
-        Source:{' '}
-        <a href="https://en.wikipedia.org/wiki/Mario" target="_blank">
-          Wikipedia
-        </a>
-      </p>
+    <Accordion allowZeroExpanded="true">
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        Is free will real or just an illusion?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        In ad velit in ex nostrud dolore cupidatat consectetur
+                        ea in ut nostrud velit in irure cillum tempor laboris
+                        sed adipisicing eu esse duis nulla non.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
     </TabPanel>
     <TabPanel className="tabpanel">
       <p>

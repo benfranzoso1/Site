@@ -3,6 +3,7 @@
 }
 
 .tablist {
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -10,11 +11,27 @@
 }
 
 .tab {
-    width: 33.33%;
+    cursor: pointer;
+    flex-grow: 1;
     color: #fff;
     height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--brand-color);
+}
+
+.react-tabs__tab--selected{
+    background: red !important;
+    border-color:green !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.tab:nth-child(1) {
+    margin-right: 20px;
+}
+
+.tab:nth-child(2) {
+    margin-left: 20px;
 }
