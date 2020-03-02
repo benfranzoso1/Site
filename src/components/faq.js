@@ -1,6 +1,6 @@
 import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+
 
 import {
   Accordion,
@@ -10,8 +10,7 @@ import {
   AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-// Demo styles, see 'Styles' section below for some notes on use.
-import 'react-accessible-accordion/dist/fancy-example.css';
+
 
 
 export default () => (
