@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby-plugin-modal-routing"
 import Layout from "../components/layout"
 import VideoModal from "../components/videomodal"
 import Feature01 from "../components/feature01"
@@ -29,7 +30,7 @@ const IndexPage = (props) => (
                     <span className="xtrasmall">Equipment-Loans.com</span>
                     <h1>We Work <span>For You On Demand.</span></h1>
                      <p className="large"><b className="bold">Headache free</b> financing so you can get back to what <span>really matters, making money.</span></p>
-                     <VideoModal></VideoModal>
+                     <Link to="/video"className="playbutton" asModal>play</Link>
                   </div>
                   <div className="heros-dealer">
                       <div className="logos">
