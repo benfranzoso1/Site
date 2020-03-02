@@ -17,6 +17,8 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 export default () => (
 <section className="faq">
     <div className="container">
+    <h2 className="center">Frequent Questions</h2>
+        <p className="medium center">Not all finance companys are created equally. We belive we have the best product and offer the best service.</p>
     <Tabs className="tabs">
     <TabList className="tablist">
       <Tab className="tab">Getting Pre-Qualifed</Tab>
@@ -24,8 +26,8 @@ export default () => (
     </TabList>
 
     <TabPanel className="tabpanel">
-    <Accordion allowZeroExpanded="true">
-            <AccordionItem>
+    <Accordion allowZeroExpanded="true" className="accordian">
+            <AccordionItem className="accordian_item">
                 <AccordionItemHeading>
                     <AccordionItemButton>
                         What harsh truths do you prefer to ignore?

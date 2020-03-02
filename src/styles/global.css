@@ -205,6 +205,17 @@ section {
     box-shadow: rgba(0, 0, 0, 0.08) 0 9px 14px -6px inset;   
 }
 
+.why::after {
+    bottom: 0px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px -9px 14px -6px inset;
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 40px;
+    z-index: 40;
+}
+
 .flexcenter {
     display: flex;
     justify-content: center;
