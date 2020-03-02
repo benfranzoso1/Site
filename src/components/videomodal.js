@@ -1,5 +1,5 @@
 import React from "react"
-import AriaModal from 'react-aria-modal'
+import AriaModal from "react-aria-modal"
 import Play from "../assets/play.svg"
 
 class VideoModal extends React.Component {
