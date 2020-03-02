@@ -2,21 +2,21 @@
     font-family: "Colfax";
     src: url("../fonts/colfaxwebbold.woff2");
     font-weight: 600;
-    /* font-display: swap; */
+    font-display: swap;
   }
 
   @font-face {
     font-family: "Colfax";
     src: url("../fonts/colfaxwebmedium.woff2");
     font-weight: 500;
-    /* font-display: swap; */
+    font-display: swap;
   }
   
   @font-face {
     font-family: "Colfax";
     src: url("../fonts/colfaxwebregular.woff2");
     font-weight: 400;
-    /* font-display: swap; */
+    font-display: swap;
   }
 
   * {

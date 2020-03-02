@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import VideoModal from "../components/videomodal"
 import Feature01 from "../components/feature01"
 import Hero from "../components/hero"
 import Steps from "../components/steps"
 import Why from "../components/why"
 import Faq from "../components/faq"
-import Play from "../assets/play.svg"
 
 import BackgroundImage from "gatsby-background-image"
 import Miller from "gatsby-image"
@@ -29,7 +29,7 @@ const IndexPage = (props) => (
                     <span className="xtrasmall">Equipment-Loans.com</span>
                     <h1>We Work <span>For You On Demand.</span></h1>
                      <p className="large"><b className="bold">Headache free</b> financing so you can get back to what <span>really matters, making money.</span></p>
-                     <button className="playbutton"><Play className="play"></Play></button>
+                     <VideoModal></VideoModal>
                   </div>
                   <div className="heros-dealer">
                       <div className="logos">

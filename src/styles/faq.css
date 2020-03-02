@@ -57,11 +57,11 @@
 
 @media (max-width: 768px) {
     .tab:nth-child(1) {
-        margin-right: 10px;
+        margin-right: 5px;
     }
     
     .tab:nth-child(2) {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 }
 
