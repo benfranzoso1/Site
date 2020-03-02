@@ -12,7 +12,7 @@ export default () => (
                    <span><Check className="check"></Check></span>
                    <div>
                        <h3>Headline!</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             </div>
@@ -21,7 +21,7 @@ export default () => (
                    <span><Check className="check"></Check></span>
                    <div>
                        <h3>Headline</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             </div>
@@ -30,7 +30,7 @@ export default () => (
                    <span><Check className="check"></Check></span>
                    <div>
                        <h3>Headline</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             </div>
@@ -39,7 +39,7 @@ export default () => (
                    <span><Check className="check"></Check></span>
                    <div>
                        <h3>Headline</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             </div>
@@ -48,7 +48,7 @@ export default () => (
                    <span><Check className="check"></Check></span>
                    <div>
                        <h3>Headline</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             </div>
@@ -57,7 +57,7 @@ export default () => (
                    <span><Check className="check"></Check></span>
                    <div>
                        <h3>Headline</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             </div>
