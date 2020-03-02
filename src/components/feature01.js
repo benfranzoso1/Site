@@ -21,21 +21,21 @@ export default () => (
                     <span className="feature01icon"><Credit className="credit"></Credit></span>
                    <div>
                        <h3>No Impact To Credit Score</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
             <div className="feature11">
                     <span className="feature01icon"><Speed className="speed"></Speed></span>
                    <div>
-                       <h3>Unbelivably Fat Funding</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <h3>Unbelivably Fast Funding</h3>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
                <div className="feature11">
                     <span className="feature01icon"><Rates className="rates"></Rates></span>
                    <div>
                        <h3>Competitive Commerical Rates</h3>
-                       <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
+                       <p>Place a why here that goes with the headline placwe a whh here go with headline</p>
                     </div>
                </div>
         </div>
