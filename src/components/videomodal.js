@@ -9,9 +9,14 @@ const VideoModal = ({ children, ...rest }) => (
     {({ modal, closeTo }) => (
       modal ? (
         <React.Fragment>
-          <Link to={closeTo}>
-            Close
-          </Link>
+<Link
+  to="/"
+  state={{
+    noScroll: true
+  }}
+>
+  Close Modal
+</Link>
           {children}
         </React.Fragment>
       ) : (
