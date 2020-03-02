@@ -28,12 +28,12 @@ export default () => (
     <TabPanel className="tabpanel">
     <Accordion allowZeroExpanded="true" className="accordian">
             <AccordionItem className="accordian_item">
-                <AccordionItemHeading>
-                    <AccordionItemButton>
+                <AccordionItemHeading className="accordian_item_heading">
+                    <AccordionItemButton className="accordian_item_button">
                         What harsh truths do you prefer to ignore?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className="accordian_item_panel">
                     <p>
                         Exercitation in fugiat est ut ad ea cupidatat ut in
                         cupidatat occaecat ut occaecat consequat est minim minim
@@ -42,36 +42,86 @@ export default () => (
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
-            <AccordionItem>
-                <AccordionItemHeading>
-                    <AccordionItemButton>
-                        Is free will real or just an illusion?
+            <AccordionItem className="accordian_item">
+                <AccordionItemHeading className="accordian_item_heading">
+                    <AccordionItemButton className="accordian_item_button">
+                        What harsh truths do you prefer to ignore?
                     </AccordionItemButton>
                 </AccordionItemHeading>
-                <AccordionItemPanel>
+                <AccordionItemPanel className="accordian_item_panel">
                     <p>
-                        In ad velit in ex nostrud dolore cupidatat consectetur
-                        ea in ut nostrud velit in irure cillum tempor laboris
-                        sed adipisicing eu esse duis nulla non.
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem className="accordian_item">
+                <AccordionItemHeading className="accordian_item_heading">
+                    <AccordionItemButton className="accordian_item_button">
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="accordian_item_panel">
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
         </Accordion>
     </TabPanel>
     <TabPanel className="tabpanel">
-      <p>
-        <b>Luigi</b> (<i>Japanese: ルイージ Hepburn: Ruīji, [ɾɯ.iː.dʑi̥]</i>) (<i>English: /luˈiːdʒi/;
-        Italian: [luˈiːdʒi]</i>) is a fictional character featured in video games and related media
-        released by Nintendo. Created by prominent game designer Shigeru Miyamoto, Luigi is portrayed
-        as the slightly younger but taller fraternal twin brother of Nintendo's mascot Mario, and
-        appears in many games throughout the Mario franchise, often as a sidekick to his brother.
-      </p>
-      <p>
-        Source:{' '}
-        <a href="https://en.wikipedia.org/wiki/Luigi" target="_blank">
-          Wikipedia
-        </a>
-      </p>
+    <Accordion allowZeroExpanded="true" className="accordian">
+            <AccordionItem className="accordian_item">
+                <AccordionItemHeading className="accordian_item_heading">
+                    <AccordionItemButton className="accordian_item_button">
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="accordian_item_panel">
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem className="accordian_item">
+                <AccordionItemHeading className="accordian_item_heading">
+                    <AccordionItemButton className="accordian_item_button">
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="accordian_item_panel">
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem className="accordian_item">
+                <AccordionItemHeading className="accordian_item_heading">
+                    <AccordionItemButton className="accordian_item_button">
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="accordian_item_panel">
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
     </TabPanel>
     <TabPanel className="tabpanel">
       <p>
