@@ -15,6 +15,7 @@ import Freightliner from "gatsby-image"
 import Cat from "gatsby-image"
 import Mack from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import Form from "../Components/Form"
 
 const IndexPage = props => (
   <Layout>
@@ -71,7 +72,12 @@ const IndexPage = props => (
       </BackgroundImage>
     </section>
     <Feature01></Feature01>
+
     <Why></Why>
+    <Form.Wrapper>
+      <h1>Let's get in touch!</h1>
+      <Form />
+    </Form.Wrapper>
     <Faq></Faq>
   </Layout>
 )

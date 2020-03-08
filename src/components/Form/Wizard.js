@@ -8,15 +8,18 @@ export default class Wizard extends React.Component {
   state = {
     page: 0,
     values: {
-      phoneNumber: "+18036278233",
-      email: "giraffesyo@gmail.com",
-      firstName: "Michael",
-      lastName: "McQuade",
-      businessName: "Softwoof",
-      timeInBusiness: "3-4",
+      phoneNumber: "",
+      email: "",
+      firstName: "",
+      lastName: "",
+      businessName: "",
+      timeInBusiness: "",
       homeOwner: null,
-      businessStructure: "Sole Proprietorship",
-      state: "Oklahoma",
+      businessStructure: "",
+      state: "",
+      equipmentType: "",
+      newUsed: "",
+      financeAmount: 10000,
     },
   }
 

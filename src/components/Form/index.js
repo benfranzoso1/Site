@@ -9,6 +9,8 @@ import Slider from "rc-slider"
 import axios from "axios"
 import "rc-slider/assets/index.css"
 
+import FormWrapper from './Wrapper'
+
 /*
 There are a bunch of errors in the console whenever you navigate forward or backwards in the wizard,
 this is documented on the github issue at:
@@ -336,4 +338,5 @@ class Form extends React.PureComponent {
   }
 }
 
+Form.Wrapper = FormWrapper
 export default Form
