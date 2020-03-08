@@ -9683,6 +9683,13 @@ react-accessible-accordion@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-accessible-accordion/-/react-accessible-accordion-3.0.1.tgz#8f3b08c712f4d5e526fad4c55c3d70fc3b68cbd5"
   integrity sha512-2OZY6PWVOTYjVRQ5vnzVfvSRvapH1fYHNE6rG0S64cCatf+IOovokZEa4Xzmdl69ebrYO2HU3h8yLlEk9LqwPA==
 
+react-countdown@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-countdown/-/react-countdown-2.2.1.tgz#28d56fc1874b5b0d5238b7efe3ae914ed8033783"
+  integrity sha512-e8dUUhlysDqgci32VOOe0uDfeDMaiyyFNrWHdmMky5fithYDt4iOJa22EF96VbkU64R4D+Bww4AbLpqA/J4dww==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"

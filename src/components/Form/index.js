@@ -4,7 +4,7 @@ import { Field } from "react-final-form"
 import Wizard from "./Wizard"
 import phone from "phone"
 import styled from "styled-components"
-
+import { navigate } from "gatsby"
 import Slider from "rc-slider"
 
 import "rc-slider/assets/index.css"
@@ -15,11 +15,6 @@ this is documented on the github issue at:
 https://github.com/final-form/react-final-form/issues/751
 */
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
-
-const onSubmit = async values => {
-  await sleep(300)
-  window.alert(JSON.stringify(values, 0, 2))
-}
 
 const Error = ({ name }) => (
   <Field
@@ -105,6 +100,7 @@ const SliderWrapper = styled.div`
 class Form extends React.PureComponent {
   state = {
     showHomeownerQuestion: false,
+    firstName: "",
   }
 
   setHomeOwner = show => {
@@ -112,11 +108,18 @@ class Form extends React.PureComponent {
     this.setState({ showHomeownerQuestion: show })
   }
 
+  onSubmit = values => {
+    //window.alert(JSON.stringify(values, 0, 2))
+    navigate('/thankyou', {state: {name: values.firstName}})
+  }
+
   render() {
     const {
       setHomeOwner,
+      onSubmit,
       state: { showHomeownerQuestion },
     } = this
+
     return (
       <Styles>
         <Wizard onSubmit={onSubmit}>
@@ -311,7 +314,6 @@ class Form extends React.PureComponent {
                   </SliderWrapper>
                 )}
               </Field>
-              {/* <Error name="financeAmount"></Error> */}
             </div>
           </Wizard.Page>
         </Wizard>
