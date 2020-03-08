@@ -9,7 +9,7 @@ import Slider from "rc-slider"
 import axios from "axios"
 import "rc-slider/assets/index.css"
 
-import FormWrapper from './Wrapper'
+import FormWrapper from "./Wrapper"
 
 /*
 There are a bunch of errors in the console whenever you navigate forward or backwards in the wizard,
@@ -119,12 +119,11 @@ class Form extends React.PureComponent {
 
   onSubmit = async values => {
     //console.log(values)
-    const res = await axios
-      .post(
-        "https://98y6soa6ik.execute-api.us-east-1.amazonaws.com/dev/",
-        values,
-        reqConfig
-      )
+    const res = await axios.post(
+      "https://3a9rlk9zv5.execute-api.us-east-1.amazonaws.com/dev/",
+      values,
+      reqConfig
+    )
     //console.log(res.data)
     navigate("/thankyou", { state: { name: values.firstName } })
   }
