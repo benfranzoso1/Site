@@ -6,7 +6,7 @@ import phone from "phone"
 import styled from "styled-components"
 import { navigate } from "gatsby"
 import Slider from "rc-slider"
-
+import axios from "axios"
 import "rc-slider/assets/index.css"
 
 /*
@@ -14,7 +14,14 @@ There are a bunch of errors in the console whenever you navigate forward or back
 this is documented on the github issue at:
 https://github.com/final-form/react-final-form/issues/751
 */
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+const reqConfig = {
+  headers: {
+    accept: "application/json",
+    "Content-Type": "application/json",
+  },
+  data: {},
+}
 
 const Error = ({ name }) => (
   <Field
@@ -108,9 +115,16 @@ class Form extends React.PureComponent {
     this.setState({ showHomeownerQuestion: show })
   }
 
-  onSubmit = values => {
-    //window.alert(JSON.stringify(values, 0, 2))
-    navigate('/thankyou', {state: {name: values.firstName}})
+  onSubmit = async values => {
+    //console.log(values)
+    const res = await axios
+      .post(
+        "https://98y6soa6ik.execute-api.us-east-1.amazonaws.com/dev/",
+        values,
+        reqConfig
+      )
+    //console.log(res.data)
+    navigate("/thankyou", { state: { name: values.firstName } })
   }
 
   render() {
@@ -284,7 +298,7 @@ class Form extends React.PureComponent {
               <label>New or used?</label>
               <Field
                 component="input"
-                name="new"
+                name="newUsed"
                 type="radio"
                 value="new"
                 id="newRadio"
@@ -292,7 +306,7 @@ class Form extends React.PureComponent {
               <label htmlFor="newRadio">New</label>
               <Field
                 component="input"
-                name="used"
+                name="newUsed"
                 type="radio"
                 value="used"
                 id="usedRadio"
