@@ -76,8 +76,6 @@ export default class Wizard extends React.Component {
                 </button>
               )}
             </div>
-
-            <pre>{JSON.stringify(values, 0, 2)}</pre>
           </form>
         )}
       </Form>
