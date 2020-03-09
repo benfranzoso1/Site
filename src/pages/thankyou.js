@@ -26,7 +26,10 @@ const Wrapper = styled.div`
 const tenMinutesFromNow = () => new Date(new Date().getTime() + 10 * 60 * 1000)
 
 export default ({ location }) => {
-  const {name} = location.state
+  let name = ""
+  if (location.hasOwnProperty("state")) {
+    name = location.state.name || ""
+  }
   return (
     <Wrapper>
       <h1>Thank you, {name} </h1>
