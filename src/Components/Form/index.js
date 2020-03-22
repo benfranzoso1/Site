@@ -1,6 +1,6 @@
 import React from "react"
 import { Field } from "react-final-form"
-import Wizard from "./Form/Wizard"
+import Wizard from "./Wizard"
 import phone from "phone"
 import { navigate } from "gatsby"
 import Slider from "rc-slider"
