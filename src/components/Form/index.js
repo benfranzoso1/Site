@@ -1,15 +1,11 @@
 import React from "react"
-import Styles from "./Styles"
 import { Field } from "react-final-form"
 import Wizard from "./Wizard"
 import phone from "phone"
-import styled from "styled-components"
 import { navigate } from "gatsby"
 import Slider from "rc-slider"
 import axios from "axios"
 import "rc-slider/assets/index.css"
-
-import FormWrapper from "./Wrapper"
 
 /*
 There are a bunch of errors in the console whenever you navigate forward or backwards in the wizard,
@@ -93,18 +89,6 @@ const moneyFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "USD",
 })
-const SliderWrapper = styled.div`
-  display: flex;
-  flex-basis: 1;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-  }
-`
 
 class Form extends React.PureComponent {
   state = {
@@ -136,7 +120,7 @@ class Form extends React.PureComponent {
     } = this
 
     return (
-      <Styles>
+      <div>
         <Wizard onSubmit={onSubmit}>
           <Wizard.Page>
             <div>
@@ -318,7 +302,7 @@ class Form extends React.PureComponent {
               <label>How much are you wanting to finance?</label>
               <Field name="financeAmount" initialValue="10000">
                 {props => (
-                  <SliderWrapper>
+                  <div>
                     <Slider
                       onChange={props.input.onChange}
                       step={10000}
@@ -326,16 +310,15 @@ class Form extends React.PureComponent {
                       min={10000}
                     ></Slider>
                     <h1>{moneyFormatter.format(props.input.value)}</h1>
-                  </SliderWrapper>
+                  </div>
                 )}
               </Field>
             </div>
           </Wizard.Page>
         </Wizard>
-      </Styles>
+      </div>
     )
   }
 }
 
-Form.Wrapper = FormWrapper
 export default Form

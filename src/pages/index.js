@@ -74,10 +74,10 @@ const IndexPage = props => (
     <Feature01></Feature01>
 
     <Why></Why>
-    <Form.Wrapper>
+    <div>
       <h1>Let's get in touch!</h1>
       <Form />
-    </Form.Wrapper>
+    </div>
     <Faq></Faq>
   </Layout>
 )
