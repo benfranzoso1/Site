@@ -1,0 +1,44 @@
+.displaynone {
+    display: none;
+}
+
+form {
+    font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input {
+    font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 500 20px Colfax;
+    color: #3e4462;
+    display: block;
+    background: #eff2f6;
+    width: 90%;
+    padding: 18px 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    -webkit-transition: border .10s ease-in-out;
+    transition: border .10s ease-in-out;
+}
+
+input[type=text]:focus {
+    border: 2px solid #345dee;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #3e4462;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: red;
+}

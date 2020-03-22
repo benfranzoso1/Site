@@ -1,6 +1,6 @@
 import React from "react"
 import { Field } from "react-final-form"
-import Wizard from "./Wizard"
+import Wizard from "./Form/Wizard"
 import phone from "phone"
 import { navigate } from "gatsby"
 import Slider from "rc-slider"
@@ -123,8 +123,7 @@ class Form extends React.PureComponent {
       <div>
         <Wizard onSubmit={onSubmit}>
           <Wizard.Page>
-            <div>
-              <label>First Name</label>
+              <label className="displaynone">First Name</label>
               <Field
                 name="firstName"
                 component="input"
@@ -133,9 +132,7 @@ class Form extends React.PureComponent {
                 validate={required}
               />
               <Error name="firstName" />
-            </div>
-            <div>
-              <label>Last Name</label>
+              <label className="displaynone">Last Name</label>
               <Field
                 name="lastName"
                 component="input"
@@ -144,9 +141,7 @@ class Form extends React.PureComponent {
                 validate={required}
               />
               <Error name="lastName" />
-            </div>
-            <div>
-              <label>Email</label>
+              <label className="displaynone">Email</label>
               <Field
                 name="email"
                 component="input"
@@ -155,9 +150,7 @@ class Form extends React.PureComponent {
                 validate={emailValidator}
               />
               <Error name="email" />
-            </div>
-            <div>
-              <label>Phone Number</label>
+              <label className="displaynone">Phone Number</label>
               <Field
                 name="phoneNumber"
                 component="input"
@@ -169,7 +162,6 @@ class Form extends React.PureComponent {
                 validate={phoneValidator}
               ></Field>
               <Error name="phoneNumber" />
-            </div>
           </Wizard.Page>
           <Wizard.Page>
             <div>
@@ -186,6 +178,7 @@ class Form extends React.PureComponent {
             <div>
               <label>Time in Business</label>
               <Field
+                className="radioSwitch"
                 id="zeroToTwo"
                 name="timeInBusiness"
                 value="0-2"

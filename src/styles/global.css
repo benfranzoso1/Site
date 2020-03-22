@@ -3,12 +3,13 @@
 @import "button.css";
 @import "hero01.css";
 @import "faq.css";
+@import "wizard.css";
 @import "videomodal.css";
 @import "typography.css";
 
 
 body {
-    font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-family: "Colfax", "Neue Helvetica W02", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     background: #fff;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
