@@ -28,7 +28,7 @@
 }
 
 .react-tabs__tab--selected{
-    background: #1C304A !important;
+    background: rgb(0, 0, 50) !important;
     color: #fff !important;
     border-radius: 0 !important;
 }

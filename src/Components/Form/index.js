@@ -1,6 +1,6 @@
 import React from "react"
 import { Field } from "react-final-form"
-import Wizard from "./Wizard"
+import Wizard from "../Wizard"
 import phone from "phone"
 import { navigate } from "gatsby"
 import Slider from "rc-slider"
@@ -123,49 +123,54 @@ class Form extends React.PureComponent {
       <div>
         <Wizard onSubmit={onSubmit}>
           <Wizard.Page>
-              <label className="displaynone">First Name</label>
-              <Field
-                name="firstName"
-                component="input"
-                type="text"
-                placeholder="First Name"
-                validate={required}
-              />
-              <Error name="firstName" />
-              <label className="displaynone">Last Name</label>
-              <Field
-                name="lastName"
-                component="input"
-                type="text"
-                placeholder="Last Name"
-                validate={required}
-              />
-              <Error name="lastName" />
-              <label className="displaynone">Email</label>
-              <Field
-                name="email"
-                component="input"
-                type="email" /* You can change this to text if you want but may lose some accessibility*/
-                placeholder="Email"
-                validate={emailValidator}
-              />
-              <Error name="email" />
-              <label className="displaynone">Phone Number</label>
-              <Field
-                name="phoneNumber"
-                component="input"
-                format={formatNum}
-                parse={formatNum}
-                formatOnBlur
-                type="tel"
-                placeholder="Phone Number"
-                validate={phoneValidator}
-              ></Field>
-              <Error name="phoneNumber" />
+              <h3>Personal Info</h3>
+              <div className="flexer">
+                <label className="displaynone">First Name</label>
+                <Field
+                  name="firstName"
+                  component="input"
+                  type="text"
+                  placeholder="First Name"
+                  validate={required}
+                />
+                <Error name="firstName" />
+                <label className="displaynone">Last Name</label>
+                <Field
+                  name="lastName"
+                  component="input"
+                  type="text"
+                  placeholder="Last Name"
+                  validate={required}
+                />
+                <Error name="lastName" />
+                <label className="displaynone">Email</label>
+                <Field
+                  name="email"
+                  component="input"
+                  type="email" /* You can change this to text if you want but may lose some accessibility*/
+                  placeholder="Email"
+                  validate={emailValidator}
+                />
+                <Error name="email" />
+                <label className="displaynone">Phone Number</label>
+                <Field
+                  name="phoneNumber"
+                  component="input"
+                  format={formatNum}
+                  parse={formatNum}
+                  formatOnBlur
+                  type="tel"
+                  pattern
+                  placeholder="Phone Number"
+                  validate={phoneValidator}
+                ></Field>
+                <Error name="phoneNumber" />
+              </div>
           </Wizard.Page>
           <Wizard.Page>
-            <div>
-              <label>Business Name</label>
+            <h3>Business Info</h3>
+            <div className="flexer">
+              <label className="displaynone">Business Name</label>
               <Field
                 name="businessName"
                 component="input"
@@ -175,10 +180,9 @@ class Form extends React.PureComponent {
               />
               <Error name="businessName" />
             </div>
-            <div>
-              <label>Time in Business</label>
+            <h4>Years in business?</h4>
+            <div className="radioswitch">
               <Field
-                className="radioSwitch"
                 id="zeroToTwo"
                 name="timeInBusiness"
                 value="0-2"
@@ -195,7 +199,7 @@ class Form extends React.PureComponent {
               >
                 {props => RadioComponent(props, setHomeOwner)}
               </Field>
-              <label htmlFor="threeToFour">3-4</label>
+              <label  className="threeToFour" htmlFor="threeToFour">3-4</label>
               <Field
                 id="fivePlus"
                 name="timeInBusiness"
@@ -204,28 +208,30 @@ class Form extends React.PureComponent {
               >
                 {props => RadioComponent(props, setHomeOwner)}
               </Field>
-              <label htmlFor="fivePlus">5+</label>
+              <label className="fivePlus" htmlFor="fivePlus">5+</label>
               <Error name="timeInBusiness" />
             </div>
             {showHomeownerQuestion && (
               <div>
-                <label>Are you a homeowner?</label>
-                <Field
-                  component="input"
-                  name="homeOwner"
-                  type="radio"
-                  value="true"
-                  id="homeOwner"
-                ></Field>
-                <label htmlFor="homeOwner">Yes</label>
-                <Field
-                  component="input"
-                  name="homeOwner"
-                  type="radio"
-                  value="false"
-                  id="notHomeOwner"
-                ></Field>
-                <label htmlFor="notHomeOwner">No</label>
+                <h4>Are you a homeowner?</h4>
+                <div className="homeOwner">
+                  <Field
+                    component="input"
+                    name="homeOwner"
+                    type="radio"
+                    value="true"
+                    id="homeOwner"
+                  ></Field>
+                  <label htmlFor="homeOwner">Yes</label>
+                  <Field
+                    component="input"
+                    name="homeOwner"
+                    type="radio"
+                    value="false"
+                    id="notHomeOwner"
+                  ></Field>
+                  <label className="notHomeOwner" htmlFor="notHomeOwner">No</label>
+                </div>
               </div>
             )}
             <div>
