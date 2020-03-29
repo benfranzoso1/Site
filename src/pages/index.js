@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../Components/layout"
-import VideoModal from "../Components/VideoModal"
-import Feature01 from "../Components/feature01"
+import VideoModal from "../Components/VideoModal/modal"
+import Feature01 from "../components/feature001"
 import Hero from "../Components/hero"
 import Steps from "../Components/steps"
 import Why from "../Components/why"
@@ -15,7 +15,7 @@ import Freightliner from "gatsby-image"
 import Cat from "gatsby-image"
 import Mack from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import Form from "../Components/Form/index"
+import Form from "../Components/Form"
 
 const IndexPage = props => (
   <Layout>
@@ -28,7 +28,6 @@ const IndexPage = props => (
         <div className="black-overlay">
           <div className="container">
             <div className="hero-cta">
-              <span className="xtrasmall">Equipment-Loans.com</span>
               <h1>
                 We Work <span>For You On Demand.</span>
               </h1>
@@ -74,10 +73,6 @@ const IndexPage = props => (
     <Feature01></Feature01>
 
     <Why></Why>
-    <div>
-      <h1>Let's get in touch!</h1>
-      <Form />
-    </div>
     <Faq></Faq>
   </Layout>
 )

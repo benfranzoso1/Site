@@ -251,8 +251,9 @@ section {
     font-weight: 500;}
 
 
-      
-
+.play {
+    fill: #fff;
+}
 
 .feature span {
     margin-right: 25px;

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Arrow from "../assets/arrow-thin-right.svg"
 import Credit from "../assets/credit.svg"
 import Speed from "../assets/fast.svg"
@@ -13,7 +14,8 @@ export default () => (
             <h2>We finance any type of equipment your business needs</h2>
             <p className="large">Headache free  financing so you can get back to what really matters, making money.</p>
             <div className="feature01 flexcenter">
-                <a href="https://ben1238.typeform.com/to/PRIyZc" className="btn-large" target="_blank" rel="noopener noreferrer">Get Started <Arrow className="arrow"/></a>
+                <Link to="/getstarted" className="btn-large" target="_blank" rel="noopener noreferrer">Get Started <Arrow className="arrow"/></Link>
+                
             </div>
         </div>
         <div className="bullets">

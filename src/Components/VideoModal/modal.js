@@ -1,5 +1,6 @@
 import React from "react"
 import ReactModal from "react-modal"
+import Play from "../../assets/play.svg"
 
 const whistia1 = {
   padding: "56.25% 0 0 0",
@@ -31,7 +32,7 @@ class VideoModal extends React.PureComponent {
     return (
       <>
         <button className="playbutton" onClick={toggleModal}>
-          play
+        <Play className="play"/>
         </button>
         <ReactModal
           shouldCloseOnEsc={true}
