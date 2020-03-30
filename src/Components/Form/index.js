@@ -333,8 +333,8 @@ class Form extends React.PureComponent {
               </Field>
               <Error name="equpmentType" />
             </div>
-            <div>
-              <label>New or used?</label>
+            <h4>Years in business?</h4>
+            <div className="radioswitch">
               <Field
                 component="input"
                 name="newUsed"
