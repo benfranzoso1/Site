@@ -6,6 +6,7 @@
 @import "wizard.css";
 @import "videomodal.css";
 @import "typography.css";
+@import "headerbar.css";
 
 
 body {
@@ -40,6 +41,15 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.borderbottom {
+    border-bottom: 1px solid #dfe4ea;
+    margin-bottom: 25px;
+}
+
+.greyblue {
+    color: #3e4462 !important;
 }
 
 .logo {

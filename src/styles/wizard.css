@@ -137,3 +137,27 @@ form span {
     margin-bottom: 20px;
     font-weight: 600;
 }
+
+.none {
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.quickfeature {
+    border: 2px solid  #dfe4ea;
+    border-radius: 8px;
+    padding: 40px;
+    height: 450px;
+}
+
+.quickfeaturelist{
+    display: flex;
+    flex-direction: column;
+}
+
+.quickfeatureitem{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
