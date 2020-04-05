@@ -5,9 +5,18 @@ import Logo from "../assets/Logo.svg"
 export default () => (
 <header className="headerbar">
     <div className="header_container">
-        <Link to="/">
-            <Logo></Logo>
-        </Link>
+        <div className="logo_container">
+            <Link to="/">
+                <Logo className="brandlogo"></Logo>
+            </Link>
+        </div>
+        <nav role="naviagtion">
+            <Link to="/">Equipment Types</Link>
+            <Link to="/">About</Link>
+            <Link to="/">Learn</Link>
+            <Link to="/">Get Started</Link>
+
+        </nav>
     </div>
 </header>
 )
