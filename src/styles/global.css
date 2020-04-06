@@ -44,12 +44,23 @@ section {
 }
 
 .borderbottom {
-    border-bottom: 1px solid #dfe4ea;
+    border-bottom: 2px solid #dfe4ea;
     margin-bottom: 25px;
+}
+
+.margintop {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.width960 {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .greyblue {
     color: #3e4462 !important;
+    margin-bottom: 25px;
 }
 
 .logo {

@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Logo from "../assets/Logo.svg"
 
 export default () => (
-<header className="headerbar">
+<header className="headerbar02">
     <div className="header_container">
         <div className="logo_container">
             <Link to="/">
@@ -16,4 +16,3 @@ export default () => (
     </div>
 </header>
 )
-

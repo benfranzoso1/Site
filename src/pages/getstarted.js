@@ -7,12 +7,13 @@ const GetStarted = () => (
     <Layout>
         <section className="applyIntro">
             <div className="container">
-                <h1 className="center">Let's Get Started</h1>
-                <p className="large center">We're eagrly on stand by waiting to here from you. Complete the form below and we will be in touch within 10 Minutues! Yeah, we're fast!</p>
+                <h1 className="center margintop">Let's Get Started</h1>
+                <p className="large center width960">We're eagrly on stand by waiting to here from you. Complete the form below and we will be in touch within 10 Minutues! Yeah, we're fast!</p>
             </div>
         </section>
         <section className="apply">
             <div className="container half-grid">
+                <Form/>
                 <div className="quickfeature">
                     <h2 className="center">Lending Made Easy</h2>
                     <div className="borderbottom"></div>
@@ -36,7 +37,6 @@ const GetStarted = () => (
                         </div>
                     </div>
                 </div>
-                <Form/>
             </div>
         </section>
     </Layout>

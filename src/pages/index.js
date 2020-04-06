@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../Components/layout"
+import Layout02 from "../Components/layout02"
 import VideoModal from "../Components/VideoModal/modal"
 import Feature01 from "../components/feature001"
 import Hero from "../Components/hero"
@@ -18,7 +18,7 @@ import { graphql, useStaticQuery } from "gatsby"
 import Form from "../Components/Form"
 
 const IndexPage = props => (
-  <Layout>
+  <Layout02>
     <section className="hero01">
       <BackgroundImage
         className="background-section"
@@ -74,7 +74,7 @@ const IndexPage = props => (
 
     <Why></Why>
     <Faq></Faq>
-  </Layout>
+  </Layout02>
 )
 
 export default IndexPage
